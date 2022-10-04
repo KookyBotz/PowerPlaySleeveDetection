@@ -31,13 +31,29 @@ Before we continue, you should take the [Signal Sleeve](https://github.com/ProDC
 Now that we have all the necessary steps required for running and getting pipeline results, we can begin tuning, if the pipeline is not detecting the correct color.
 
 To modify the color ranges, assuming that the pipeline isn't picking it up enough, we can change the existing range values for the lower and upper RGB boundaries for a desired color. <br />
-![image](https://user-images.githubusercontent.com/55424697/193849790-7ed2f694-1910-45b5-aff8-54bc03d5629e.png)
+```java
+// Lower and upper boundaries for colors
+private static final Scalar
+        lower_yellow_bounds  = new Scalar(200, 200, 0, 255),
+        upper_yellow_bounds  = new Scalar(255, 255, 130, 255),
+        lower_cyan_bounds    = new Scalar(0, 200, 200, 255),
+        upper_cyan_bounds    = new Scalar(150, 255, 255, 255),
+        lower_magenta_bounds = new Scalar(170, 0, 170, 255),
+        upper_magenta_bounds = new Scalar(255, 60, 255, 255);
+```
 
 When tuned correctly, the box displayed on the screen will alter it's color based on the color picked up. If the box however needs to be moved around and scaled, you can modify the variables seen below to change the position, width, and height.<br />
-![image](https://user-images.githubusercontent.com/55424697/193850534-87efd16f-0977-4434-a1f4-e35cb64f6fdb.png)
+```java
+// TOPLEFT anchor point for the bounding box
+private static final Point SLEEVE_TOPLEFT_ANCHOR_POINT = new Point(145, 168);
+
+// Width and height for the bounding box
+public static int REGION_WIDTH = 30;
+public static int REGION_HEIGHT = 50;
+```
 
 After setting up the camera, _(example can be seen in `VisionTest.java`)_ if you want to get the current position stored in an enum, then you can do
-```c++
+```java
 sleeveDetection.getPosition()
 ```
 
