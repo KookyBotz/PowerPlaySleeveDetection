@@ -66,4 +66,4 @@ If all the initialization and download steps are completed, you will be able to 
 
 If you need help with the pipeline or have trouble tuning, don't be afraid to reach out to us! <br />
 Discord: ```ProDCG#0641``` <br />
-Project: [Repository Link](https://github.com/ProDCG/PowerPlaySleeveDetection)
+Project: [Repository Link](https://github.com/KookyBotz/PowerPlaySleeveDetection)
