@@ -1,7 +1,3 @@
-package org.firstinspires.ftc.teamcode.common.powerplay;
-
-import com.acmerobotics.dashboard.config.Config;
-
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
@@ -11,7 +7,6 @@ import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
 import org.openftc.easyopencv.OpenCvPipeline;
 
-@Config
 public class SleeveDetection extends OpenCvPipeline {
     /*
     YELLOW  = Parking Left
@@ -67,6 +62,10 @@ public class SleeveDetection extends OpenCvPipeline {
         // Noise reduction
         Imgproc.blur(input, blurredMat, new Size(5, 5));
         blurredMat = blurredMat.submat(new Rect(sleeve_pointA, sleeve_pointB));
+        
+        // Apply Morphology
+        Mat kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(3, 3));
+        Imgproc.morphologyEx(blurredMat, blurredMat, Imgproc.MORPH_CLOSE, kernel);
         
         // Gets channels from given source mat
         Core.inRange(blurredMat, lower_yellow_bounds, upper_yellow_bounds, yelMat);
