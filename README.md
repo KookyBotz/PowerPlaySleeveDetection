@@ -26,3 +26,16 @@ For detailed instructions on how to install the necessary files and setup EOCV, 
 
 Now that all necessary files have been added, download the `VisionTest.java` and `SleeveDetection.java` files above, and drop them into your project files.
 
+Before we continue, you should take the [Signal Sleeve](https://github.com/ProDCG/PowerPlaySleeveDetection/blob/main/signal-sleeve-template.png) file given and print it out. Once printed out, cut around the edges of the sleeve, and then glue the dark ends together.
+
+Now that we have all the necessary steps required for running and getting pipeline results, we can begin tuning, if the pipeline is not detecting the correct color.
+
+To modify the color ranges, assuming that the pipeline isn't picking it up enough, we can change the existing range values for the lower and upper RGB boundaries for a desired color. <br />
+![image](https://user-images.githubusercontent.com/55424697/193849790-7ed2f694-1910-45b5-aff8-54bc03d5629e.png)
+
+When tuned correctly, the box displayed on the screen will alter it's color based on the color picked up. If the box however needs to be moved around and scaled, you can modify the variables seen below to change the position, width, and height.
+![image](https://user-images.githubusercontent.com/55424697/193850534-87efd16f-0977-4434-a1f4-e35cb64f6fdb.png)
+
+
+
+
