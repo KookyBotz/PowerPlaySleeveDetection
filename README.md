@@ -33,8 +33,15 @@ Now that we have all the necessary steps required for running and getting pipeli
 To modify the color ranges, assuming that the pipeline isn't picking it up enough, we can change the existing range values for the lower and upper RGB boundaries for a desired color. <br />
 ![image](https://user-images.githubusercontent.com/55424697/193849790-7ed2f694-1910-45b5-aff8-54bc03d5629e.png)
 
-When tuned correctly, the box displayed on the screen will alter it's color based on the color picked up. If the box however needs to be moved around and scaled, you can modify the variables seen below to change the position, width, and height.
+When tuned correctly, the box displayed on the screen will alter it's color based on the color picked up. If the box however needs to be moved around and scaled, you can modify the variables seen below to change the position, width, and height.<br />
 ![image](https://user-images.githubusercontent.com/55424697/193850534-87efd16f-0977-4434-a1f4-e35cb64f6fdb.png)
+
+After setting up the camera, _(example can be seen in `VisionTest.java`)_ if you want to get the current position stored in an enum, then you can do
+```c++
+sleeveDetection.getPosition()
+```
+
+If all the initialization and download steps are completed, you will be able to run the `VisionTest.java` example OpMode and then preview the camera on your driver hub.
 
 
 
