@@ -1,4 +1,7 @@
 # Signal Sleeve Detection Template
+
+_NOTE: SDK8.0+ is required._<br />
+
 This year for PowerPlay, one of the tasks teams have to complete is coming up with a way to detect their custom signal sleeve, placed on top of a cone for the autonomous period. To speed up the process, we created this example signal sleeve template, along with code to show how to use it, and an attached picture of the signal sleeve being used, so that any team can instantly download our code, print out the signal sleeve, and with a little tuning be ready to go for auto. 
 
 Another common problem this plans to help out is give people an easier option for detecting the signal sleeve as opposed to using software like TensorFlow
