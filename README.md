@@ -19,7 +19,7 @@ These instructions will cover how to install the required files, how to setup [E
 
 ### Installation
 
-_NOTE: SDK8.0+ is required._
+_NOTE: SDK8.0+ is required._<br />
 For detailed instructions on how to install the necessary files and setup EOCV, see [EasyOpenCV Installation Setup](https://github.com/OpenFTC/EasyOpenCV)
 
 ### Tuning and Usage
