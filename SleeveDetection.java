@@ -110,6 +110,12 @@ public class SleeveDetection extends OpenCvPipeline {
                     2
             );
         }
+        
+        // Memory cleanup
+        blurredMat.release();
+        yelMat.release();
+        cyaMat.release();
+        magMat.release();
 
         return input;
     }
