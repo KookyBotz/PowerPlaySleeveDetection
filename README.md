@@ -29,7 +29,7 @@ For detailed instructions on how to install the necessary files and setup EOCV, 
 
 Now that all necessary files have been added, download the `VisionTest.java` and `SleeveDetection.java` files above, and drop them into your project files.
 
-Before we continue, you should take the [Signal Sleeve](https://github.com/ProDCG/PowerPlaySleeveDetection/blob/main/signal-sleeve-template.png) file given and print it out. Once printed out, cut around the edges of the sleeve, and then glue the dark ends together. It is important to note that for a custom signal sleeve to be legal, your team number must be written under it. There are white boxes located underneath each color, where you are supposed to write it. We recommend either adding it via a tool like Photoshop, so that when you print it out it comes out nicely, or taking a sharpie and adding it on after it has been printed.
+Before we continue, you should take the [Signal Sleeve](https://github.com/ProDCG/PowerPlaySleeveDetection/blob/main/signal-sleeve-template.png) file given and print it out. Once printed out, cut around the edges of the sleeve, and then glue the dark ends together. It is important to note that for a custom signal sleeve to be legal, your team number must be written under it. There are white boxes located underneath each color, where you are supposed to write it. We recommend adding it via a tool like Photoshop or Paint.
 
 Now that we have all the necessary steps required for running and getting pipeline results, we can begin tuning, if the pipeline is not detecting the correct color.
 
