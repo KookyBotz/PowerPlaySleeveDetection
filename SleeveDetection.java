@@ -116,6 +116,7 @@ public class SleeveDetection extends OpenCvPipeline {
         yelMat.release();
         cyaMat.release();
         magMat.release();
+        kernel.release();
 
         return input;
     }
