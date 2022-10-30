@@ -1,5 +1,3 @@
-package org.firstinspires.ftc.teamcode.opmode.test.vision;
-
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
